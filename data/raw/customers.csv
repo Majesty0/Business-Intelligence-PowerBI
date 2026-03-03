@@ -1,0 +1,26 @@
+CustomerID,CustomerName,Segment,Email,Phone,City,State,Region,Country,JoinDate,TotalOrders,TotalSpend,LoyaltyTier
+C001,Alice Johnson,Consumer,alice.johnson@email.com,555-0101,New York,NY,East,USA,2020-03-15,8,5243.51,Gold
+C002,Bob Smith,Corporate,bob.smith@email.com,555-0102,Los Angeles,CA,West,USA,2019-07-22,7,6396.22,Platinum
+C003,Carol White,Consumer,carol.white@email.com,555-0103,Miami,FL,South,USA,2021-01-10,6,2692.36,Silver
+C004,David Brown,Corporate,david.brown@email.com,555-0104,Chicago,IL,Central,USA,2018-11-05,6,3002.81,Silver
+C005,Eva Martinez,Consumer,eva.martinez@email.com,555-0105,Boston,MA,East,USA,2020-08-19,5,1556.64,Bronze
+C006,Frank Davis,Home Office,frank.davis@email.com,555-0106,Seattle,WA,West,USA,2021-04-30,5,1127.29,Bronze
+C007,Grace Lee,Consumer,grace.lee@email.com,555-0107,Dallas,TX,South,USA,2019-12-12,5,1877.94,Silver
+C008,Henry Wilson,Corporate,henry.wilson@email.com,555-0108,Denver,CO,Central,USA,2020-06-25,5,1632.29,Silver
+C009,Ivan Garcia,Home Office,ivan.garcia@email.com,555-0109,Phoenix,AZ,West,USA,2021-09-08,4,1907.43,Silver
+C010,Jane Taylor,Consumer,jane.taylor@email.com,555-0110,Atlanta,GA,South,USA,2020-02-14,4,1463.29,Bronze
+C011,Kevin Anderson,Corporate,kevin.anderson@email.com,555-0111,Philadelphia,PA,East,USA,2019-05-20,4,1519.82,Bronze
+C012,Laura Thomas,Home Office,laura.thomas@email.com,555-0112,San Antonio,TX,Central,USA,2021-07-11,4,2097.01,Silver
+C013,Mike Jackson,Corporate,mike.jackson@email.com,555-0113,Portland,OR,West,USA,2018-10-30,4,591.57,Bronze
+C014,Nancy Harris,Consumer,nancy.harris@email.com,555-0114,Brooklyn,NY,East,USA,2020-05-17,3,2323.06,Silver
+C015,Oscar Martinez,Home Office,oscar.martinez@email.com,555-0115,Memphis,TN,South,USA,2021-02-28,3,1283.13,Bronze
+C016,Paul Robinson,Corporate,paul.robinson@email.com,555-0116,San Diego,CA,West,USA,2019-08-15,3,881.64,Bronze
+C017,Quinn White,Consumer,quinn.white@email.com,555-0117,Columbus,OH,East,USA,2020-11-22,3,650.97,Bronze
+C018,Rachel Clark,Home Office,rachel.clark@email.com,555-0118,Indianapolis,IN,Central,USA,2021-06-03,4,197.57,Bronze
+C019,Steve Lewis,Corporate,steve.lewis@email.com,555-0119,San Jose,CA,West,USA,2018-09-14,3,1058.14,Bronze
+C020,Tina Walker,Consumer,tina.walker@email.com,555-0120,Austin,TX,East,USA,2020-04-08,3,1031.49,Bronze
+C021,Uma Harris,Home Office,uma.harris@email.com,555-0121,Jacksonville,FL,South,USA,2021-03-25,3,2758.24,Silver
+C022,Victor Moore,Corporate,victor.moore@email.com,555-0122,San Francisco,CA,West,USA,2019-01-31,3,729.97,Bronze
+C023,Wendy Taylor,Consumer,wendy.taylor@email.com,555-0123,Charlotte,NC,East,USA,2021-08-16,3,357.56,Bronze
+C024,Xavier White,Home Office,xavier.white@email.com,555-0124,Fort Worth,TX,Central,USA,2020-10-05,3,1211.74,Bronze
+C025,Yara Johnson,Corporate,yara.johnson@email.com,555-0125,Nashville,TN,South,USA,2020-07-19,4,837.47,Bronze

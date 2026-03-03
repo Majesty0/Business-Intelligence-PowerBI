@@ -1,0 +1,101 @@
+OrderID,OrderDate,CustomerID,CustomerName,Region,Country,Category,SubCategory,Product,Quantity,UnitPrice,Discount,Sales,Profit,ShipMode,ShipDate
+1001,2023-01-05,C001,Alice Johnson,East,USA,Technology,Phones,Samsung Galaxy S22,2,799.99,0.1,1439.98,287.99,Standard Class,2023-01-10
+1002,2023-01-07,C002,Bob Smith,West,USA,Furniture,Chairs,Herman Miller Aeron,1,1299.00,0.05,1234.05,184.11,Second Class,2023-01-12
+1003,2023-01-10,C003,Carol White,South,USA,Office Supplies,Paper,A4 Printer Paper (500 sheets),10,9.99,0.0,99.90,35.96,First Class,2023-01-11
+1004,2023-01-12,C004,David Brown,Central,USA,Technology,Laptops,Dell XPS 15,1,1599.99,0.15,1359.99,191.83,Same Day,2023-01-12
+1005,2023-01-15,C005,Eva Martinez,East,USA,Furniture,Tables,Ikea Linnmon Desk,2,249.00,0.0,498.00,74.70,Standard Class,2023-01-20
+1006,2023-01-18,C006,Frank Davis,West,USA,Office Supplies,Binders,Avery Heavy Duty Binder,5,12.49,0.05,59.33,17.80,Second Class,2023-01-23
+1007,2023-01-20,C007,Grace Lee,South,USA,Technology,Accessories,Logitech MX Keys Keyboard,3,99.99,0.0,299.97,89.99,First Class,2023-01-22
+1008,2023-01-22,C008,Henry Wilson,Central,USA,Furniture,Bookcases,IKEA Billy Bookcase,2,179.00,0.1,322.20,32.22,Standard Class,2023-01-28
+1009,2023-01-25,C001,Alice Johnson,East,USA,Office Supplies,Labels,Avery Address Labels,20,4.99,0.0,99.80,39.92,Second Class,2023-01-29
+1010,2023-01-28,C009,Ivan Garcia,West,USA,Technology,Phones,Apple iPhone 14,1,999.99,0.05,949.99,142.50,Same Day,2023-01-28
+1011,2023-02-02,C010,Jane Taylor,South,USA,Office Supplies,Pens,Pilot G2 Gel Pens (12-pack),8,14.99,0.0,119.92,47.97,Standard Class,2023-02-07
+1012,2023-02-05,C002,Bob Smith,West,USA,Technology,Monitors,Dell UltraSharp 27",1,549.99,0.1,494.99,74.25,Second Class,2023-02-10
+1013,2023-02-08,C011,Kevin Anderson,East,USA,Furniture,Chairs,Steelcase Leap Chair,1,1149.00,0.0,1149.00,172.35,First Class,2023-02-10
+1014,2023-02-10,C012,Laura Thomas,Central,USA,Technology,Accessories,Apple AirPods Pro,2,249.00,0.05,473.10,94.62,Standard Class,2023-02-15
+1015,2023-02-13,C003,Carol White,South,USA,Furniture,Tables,Adjustable Standing Desk,1,399.99,0.0,399.99,59.99,Second Class,2023-02-18
+1016,2023-02-15,C013,Mike Jackson,West,USA,Office Supplies,Staples,Swingline Staples,15,5.99,0.05,85.36,34.14,First Class,2023-02-17
+1017,2023-02-18,C014,Nancy Harris,East,USA,Technology,Laptops,MacBook Pro 14",1,1999.00,0.1,1799.10,269.87,Same Day,2023-02-18
+1018,2023-02-20,C004,David Brown,Central,USA,Office Supplies,Paper,HP Premium Inkjet Paper,12,8.99,0.0,107.88,43.15,Standard Class,2023-02-25
+1019,2023-02-22,C015,Oscar Martinez,South,USA,Furniture,Chairs,La-Z-Boy Executive Chair,1,699.99,0.15,594.99,59.50,Second Class,2023-02-27
+1020,2023-02-25,C005,Eva Martinez,East,USA,Technology,Accessories,USB-C Hub 7-in-1,4,49.99,0.0,199.96,59.99,First Class,2023-02-27
+1021,2023-03-01,C016,Paul Robinson,West,USA,Office Supplies,Binders,Cardinal Premier One-Touch Binder,6,18.99,0.05,108.24,43.30,Standard Class,2023-03-06
+1022,2023-03-03,C006,Frank Davis,West,USA,Technology,Phones,Google Pixel 7,1,599.00,0.0,599.00,89.85,Second Class,2023-03-08
+1023,2023-03-06,C017,Quinn White,East,USA,Furniture,Bookcases,Sauder Bookcase,2,149.99,0.1,269.98,26.99,First Class,2023-03-08
+1024,2023-03-08,C007,Grace Lee,South,USA,Technology,Laptops,HP Spectre x360,1,1349.99,0.05,1282.49,192.37,Same Day,2023-03-08
+1025,2023-03-10,C018,Rachel Clark,Central,USA,Office Supplies,Scissors,Fiskars All-Purpose Scissors,10,8.99,0.0,89.90,26.97,Standard Class,2023-03-15
+1026,2023-03-13,C008,Henry Wilson,Central,USA,Technology,Monitors,LG UltraWide 34",1,699.99,0.1,629.99,94.50,Second Class,2023-03-18
+1027,2023-03-15,C019,Steve Lewis,West,USA,Furniture,Tables,Folding Conference Table,1,549.00,0.0,549.00,82.35,First Class,2023-03-17
+1028,2023-03-17,C009,Ivan Garcia,West,USA,Office Supplies,Paper,Hammermill Copy Paper (Case),5,39.99,0.05,189.95,71.98,Standard Class,2023-03-22
+1029,2023-03-20,C020,Tina Walker,East,USA,Technology,Accessories,Blue Yeti USB Microphone,2,129.99,0.0,259.98,77.99,Second Class,2023-03-25
+1030,2023-03-22,C010,Jane Taylor,South,USA,Furniture,Chairs,Autonomous ErgoChair Pro,1,499.00,0.15,424.15,42.42,First Class,2023-03-24
+1031,2023-04-01,C001,Alice Johnson,East,USA,Technology,Phones,Samsung Galaxy S23,1,849.99,0.05,807.49,121.12,Same Day,2023-04-01
+1032,2023-04-03,C011,Kevin Anderson,East,USA,Office Supplies,Pens,BIC Round Stic Pens (60-pack),4,11.99,0.0,47.96,19.18,Standard Class,2023-04-08
+1033,2023-04-05,C021,Uma Harris,South,USA,Technology,Laptops,Lenovo ThinkPad X1 Carbon,1,1449.99,0.1,1304.99,195.75,Second Class,2023-04-10
+1034,2023-04-07,C012,Laura Thomas,Central,USA,Furniture,Tables,Lifetime 6-Foot Folding Table,3,79.99,0.0,239.97,47.99,First Class,2023-04-09
+1035,2023-04-10,C002,Bob Smith,West,USA,Office Supplies,Staples,PaperPro Stapler,2,19.99,0.05,37.98,11.39,Standard Class,2023-04-15
+1036,2023-04-12,C022,Victor Moore,West,USA,Technology,Accessories,Webcam Logitech C922,2,99.99,0.0,199.98,59.99,Second Class,2023-04-17
+1037,2023-04-15,C013,Mike Jackson,West,USA,Furniture,Bookcases,Barrister Barrister Bookcase,1,349.00,0.1,314.10,31.41,First Class,2023-04-17
+1038,2023-04-17,C003,Carol White,South,USA,Technology,Monitors,ASUS ProArt 27" 4K,1,799.99,0.0,799.99,119.99,Same Day,2023-04-17
+1039,2023-04-20,C023,Wendy Taylor,East,USA,Office Supplies,Labels,Dymo LabelWriter 450,1,89.99,0.05,85.49,25.65,Standard Class,2023-04-25
+1040,2023-04-22,C014,Nancy Harris,East,USA,Furniture,Chairs,Flash Furniture High-Back Chair,2,229.99,0.0,459.98,68.99,Second Class,2023-04-27
+1041,2023-05-02,C015,Oscar Martinez,South,USA,Technology,Phones,OnePlus 11,1,699.00,0.05,664.05,99.61,First Class,2023-05-04
+1042,2023-05-05,C004,David Brown,Central,USA,Office Supplies,Paper,Ream of A4 Paper 80gsm,20,6.99,0.0,139.80,55.92,Standard Class,2023-05-10
+1043,2023-05-07,C024,Xavier White,Central,USA,Technology,Laptops,Asus ZenBook 14,1,999.00,0.1,899.10,134.87,Second Class,2023-05-12
+1044,2023-05-10,C016,Paul Robinson,West,USA,Furniture,Tables,IKEA Bekant Sit-Stand Desk,1,649.00,0.0,649.00,97.35,First Class,2023-05-12
+1045,2023-05-12,C005,Eva Martinez,East,USA,Office Supplies,Binders,Mead Flex Binder,8,7.99,0.05,60.72,24.29,Standard Class,2023-05-17
+1046,2023-05-15,C025,Yara Johnson,South,USA,Technology,Accessories,Sony WH-1000XM5 Headphones,1,399.99,0.1,359.99,53.99,Second Class,2023-05-20
+1047,2023-05-17,C017,Quinn White,East,USA,Furniture,Bookcases,Better Homes 6-Shelf Bookcase,1,189.99,0.0,189.99,28.50,First Class,2023-05-19
+1048,2023-05-20,C006,Frank Davis,West,USA,Technology,Monitors,Samsung 32" Curved Monitor,1,449.99,0.1,404.99,60.75,Same Day,2023-05-20
+1049,2023-05-22,C018,Rachel Clark,Central,USA,Office Supplies,Scissors,Westcott Titanium Scissors,6,12.99,0.0,77.94,31.18,Standard Class,2023-05-27
+1050,2023-05-25,C019,Steve Lewis,West,USA,Furniture,Chairs,Serta Smart Layers Chair,1,399.99,0.15,339.99,33.99,Second Class,2023-05-30
+1051,2023-06-01,C020,Tina Walker,East,USA,Technology,Phones,Motorola Edge 40 Pro,1,549.00,0.05,521.55,78.23,First Class,2023-06-03
+1052,2023-06-03,C007,Grace Lee,South,USA,Office Supplies,Pens,Sharpie Permanent Markers (36-pack),5,19.99,0.0,99.95,39.98,Standard Class,2023-06-08
+1053,2023-06-06,C021,Uma Harris,South,USA,Technology,Laptops,MSI Creator 15,1,1799.00,0.1,1619.10,242.87,Second Class,2023-06-11
+1054,2023-06-08,C008,Henry Wilson,Central,USA,Furniture,Tables,Huanuo L-Shaped Desk,1,299.99,0.0,299.99,44.99,First Class,2023-06-10
+1055,2023-06-10,C022,Victor Moore,West,USA,Office Supplies,Labels,Avery 8163 Labels,15,8.99,0.05,128.11,51.24,Standard Class,2023-06-15
+1056,2023-06-13,C009,Ivan Garcia,West,USA,Technology,Accessories,Elgato Stream Deck,1,149.99,0.0,149.99,44.99,Second Class,2023-06-18
+1057,2023-06-15,C023,Wendy Taylor,East,USA,Furniture,Bookcases,Prepac Kallisto Bookcase,1,219.99,0.1,197.99,19.80,First Class,2023-06-17
+1058,2023-06-17,C010,Jane Taylor,South,USA,Technology,Monitors,AOC 27" IPS Monitor,2,329.99,0.0,659.98,98.99,Same Day,2023-06-17
+1059,2023-06-20,C024,Xavier White,Central,USA,Office Supplies,Staples,Stanley Bostitch Staples,10,6.49,0.05,61.66,24.66,Standard Class,2023-06-25
+1060,2023-06-22,C025,Yara Johnson,South,USA,Furniture,Chairs,Homall Gaming Chair,1,249.99,0.0,249.99,37.49,Second Class,2023-06-27
+1061,2023-07-02,C001,Alice Johnson,East,USA,Technology,Phones,Xiaomi 13 Pro,1,799.00,0.05,759.05,113.86,First Class,2023-07-04
+1062,2023-07-05,C011,Kevin Anderson,East,USA,Office Supplies,Paper,Canson Art Paper,12,15.99,0.0,191.88,76.75,Standard Class,2023-07-10
+1063,2023-07-07,C002,Bob Smith,West,USA,Technology,Laptops,Razer Blade 15,1,2499.00,0.05,2374.05,356.11,Second Class,2023-07-12
+1064,2023-07-10,C012,Laura Thomas,Central,USA,Furniture,Tables,Tribesigns L-Shaped Desk,1,299.99,0.1,269.99,40.50,First Class,2023-07-12
+1065,2023-07-12,C013,Mike Jackson,West,USA,Office Supplies,Binders,AmazonBasics 3-Ring Binder (10-pack),3,24.99,0.05,71.22,28.49,Standard Class,2023-07-17
+1066,2023-07-15,C003,Carol White,South,USA,Technology,Accessories,Anker USB-C Hub,5,39.99,0.0,199.95,59.99,Second Class,2023-07-20
+1067,2023-07-17,C014,Nancy Harris,East,USA,Furniture,Bookcases,Sauder Beginnings 5-Shelf,1,129.99,0.1,116.99,17.55,First Class,2023-07-19
+1068,2023-07-20,C004,David Brown,Central,USA,Technology,Monitors,BenQ 27" Gaming Monitor,1,399.99,0.0,399.99,59.99,Same Day,2023-07-20
+1069,2023-07-22,C015,Oscar Martinez,South,USA,Office Supplies,Scissors,LIVINGO 3-Pack Scissors,4,17.99,0.05,68.36,27.34,Standard Class,2023-07-27
+1070,2023-07-25,C005,Eva Martinez,East,USA,Furniture,Chairs,Modway Jive Chair,2,349.00,0.0,698.00,104.70,Second Class,2023-07-30
+1071,2023-08-01,C016,Paul Robinson,West,USA,Technology,Phones,Sony Xperia 1 V,1,1299.99,0.1,1169.99,175.50,First Class,2023-08-03
+1072,2023-08-03,C006,Frank Davis,West,USA,Office Supplies,Pens,Zebra Pen F-301 (24-pack),6,22.99,0.0,137.94,55.18,Standard Class,2023-08-08
+1073,2023-08-06,C017,Quinn White,East,USA,Technology,Laptops,Acer Swift 5,1,1099.00,0.05,1044.05,156.61,Second Class,2023-08-11
+1074,2023-08-08,C007,Grace Lee,South,USA,Furniture,Tables,VIVO Standing Desk Converter,1,179.99,0.0,179.99,26.99,First Class,2023-08-10
+1075,2023-08-10,C018,Rachel Clark,Central,USA,Office Supplies,Labels,Brother P-Touch Label Maker,1,39.99,0.05,37.99,11.40,Standard Class,2023-08-15
+1076,2023-08-13,C008,Henry Wilson,Central,USA,Technology,Accessories,Jabra Evolve2 65 Headset,1,379.00,0.1,341.10,51.17,Second Class,2023-08-18
+1077,2023-08-15,C019,Steve Lewis,West,USA,Furniture,Bookcases,Convenience Concepts Oxford 5-Shelf,1,89.99,0.0,89.99,13.50,First Class,2023-08-17
+1078,2023-08-17,C009,Ivan Garcia,West,USA,Technology,Monitors,Gigabyte M32U 4K Gaming Monitor,1,649.99,0.05,617.49,92.62,Same Day,2023-08-17
+1079,2023-08-20,C020,Tina Walker,East,USA,Office Supplies,Staples,Arrow Fastener T50 Staples,10,4.99,0.0,49.90,19.96,Standard Class,2023-08-25
+1080,2023-08-22,C010,Jane Taylor,South,USA,Furniture,Chairs,Ovios Ergonomic Chair,1,599.00,0.15,509.15,50.92,Second Class,2023-08-27
+1081,2023-09-01,C021,Uma Harris,South,USA,Technology,Phones,Nothing Phone 2,1,599.00,0.05,569.05,85.36,First Class,2023-09-03
+1082,2023-09-03,C001,Alice Johnson,East,USA,Office Supplies,Paper,Staples Copy Paper (5-ream),3,29.99,0.0,89.97,35.99,Standard Class,2023-09-08
+1083,2023-09-06,C022,Victor Moore,West,USA,Technology,Laptops,LG Gram 16,1,1449.00,0.1,1304.10,195.62,Second Class,2023-09-11
+1084,2023-09-08,C011,Kevin Anderson,East,USA,Furniture,Tables,DEVAISE Computer Desk,1,129.99,0.0,129.99,19.50,First Class,2023-09-10
+1085,2023-09-10,C023,Wendy Taylor,East,USA,Office Supplies,Binders,Avery Heavy Duty View Binder (6-pack),2,38.99,0.05,74.08,22.22,Standard Class,2023-09-15
+1086,2023-09-13,C002,Bob Smith,West,USA,Technology,Accessories,Bose QuietComfort 45,1,329.00,0.0,329.00,98.70,Second Class,2023-09-18
+1087,2023-09-15,C012,Laura Thomas,Central,USA,Furniture,Bookcases,Closetmaid Adjustable Bookcase,1,59.99,0.1,53.99,8.10,First Class,2023-09-17
+1088,2023-09-17,C024,Xavier White,Central,USA,Technology,Monitors,Philips 276E9QJAB 27",1,249.99,0.0,249.99,37.50,Same Day,2023-09-17
+1089,2023-09-20,C013,Mike Jackson,West,USA,Office Supplies,Scissors,Fiskars Recycled 8" Scissors (3-pack),5,15.99,0.05,75.95,30.38,Standard Class,2023-09-25
+1090,2023-09-22,C025,Yara Johnson,South,USA,Furniture,Chairs,IKEA MARKUS Chair,1,229.00,0.0,229.00,34.35,Second Class,2023-09-27
+1091,2023-10-01,C003,Carol White,South,USA,Technology,Phones,Fairphone 5,1,699.00,0.05,664.05,99.61,First Class,2023-10-03
+1092,2023-10-03,C014,Nancy Harris,East,USA,Office Supplies,Pens,Pentel EnerGel Pens (12-pack),5,17.99,0.0,89.95,35.98,Standard Class,2023-10-08
+1093,2023-10-06,C004,David Brown,Central,USA,Technology,Laptops,Framework Laptop 13,1,1049.00,0.05,996.55,149.48,Second Class,2023-10-11
+1094,2023-10-08,C015,Oscar Martinez,South,USA,Furniture,Tables,Flexispot 4-Legs Standing Desk,1,299.99,0.1,269.99,40.50,First Class,2023-10-10
+1095,2023-10-10,C016,Paul Robinson,West,USA,Office Supplies,Labels,Avery Easy Peel Labels (500 labels),10,12.99,0.05,123.40,49.36,Standard Class,2023-10-15
+1096,2023-10-13,C005,Eva Martinez,East,USA,Technology,Accessories,Rode NT-USB Mini Microphone,1,99.00,0.0,99.00,29.70,Second Class,2023-10-18
+1097,2023-10-15,C017,Quinn White,East,USA,Furniture,Bookcases,South Shore 5-Shelf Bookcase,1,159.99,0.1,143.99,14.40,First Class,2023-10-17
+1098,2023-10-17,C006,Frank Davis,West,USA,Technology,Monitors,Dell S2722DGM Gaming Monitor,1,299.99,0.0,299.99,44.99,Same Day,2023-10-17
+1099,2023-10-20,C018,Rachel Clark,Central,USA,Office Supplies,Staples,Stanley TRA704T Staples,8,3.99,0.0,31.92,12.77,Standard Class,2023-10-25
+1100,2023-10-22,C019,Steve Lewis,West,USA,Furniture,Chairs,X Chair X2 K-Sport Mesh,1,799.00,0.15,679.15,67.92,Second Class,2023-10-27
