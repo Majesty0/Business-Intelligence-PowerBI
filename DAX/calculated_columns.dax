@@ -1,0 +1,64 @@
+-- ============================================================
+-- Calculated Columns in DAX
+-- Add these in the data model view (not report view).
+-- Replace <TableName> and <ColumnName> with your own names.
+-- ============================================================
+
+
+-- ── Date / Time ─────────────────────────────────────────────
+
+-- Year-Month label, e.g. "2024-03"
+YearMonth =
+    FORMAT( Sales[OrderDate], "YYYY-MM" )
+
+-- Quarter label, e.g. "Q1 2024"
+Quarter Label =
+    "Q" & QUARTER( Sales[OrderDate] ) & " " & YEAR( Sales[OrderDate] )
+
+-- Day of week name
+Day Name =
+    FORMAT( Sales[OrderDate], "dddd" )
+
+-- Age of order in days (as of today)
+Order Age (Days) =
+    DATEDIFF( Sales[OrderDate], TODAY(), DAY )
+
+
+-- ── Revenue Banding ─────────────────────────────────────────
+
+Revenue Band =
+    SWITCH(
+        TRUE(),
+        Sales[SalesAmount] >= 10000, "High (≥ 10 000)",
+        Sales[SalesAmount] >= 1000,  "Mid (1 000 – 9 999)",
+        Sales[SalesAmount] >= 100,   "Low (100 – 999)",
+        "Micro (< 100)"
+    )
+
+
+-- ── Profit ──────────────────────────────────────────────────
+
+Line Profit =
+    Sales[SalesAmount] - ( Sales[Quantity] * Sales[UnitCost] )
+
+Profit Margin % =
+    DIVIDE( Sales[Line Profit], Sales[SalesAmount], 0 )
+
+
+-- ── Customer Segmentation ───────────────────────────────────
+
+Customer Segment =
+    VAR TotalSpend =
+        CALCULATE( SUM( Sales[SalesAmount] ), RELATEDTABLE( Sales ) )
+    RETURN
+        SWITCH(
+            TRUE(),
+            TotalSpend >= 50000, "Platinum",
+            TotalSpend >= 20000, "Gold",
+            TotalSpend >= 5000,  "Silver",
+            "Bronze"
+        )
+
+-- Full name concatenation
+Customer Full Name =
+    Customers[FirstName] & " " & Customers[LastName]

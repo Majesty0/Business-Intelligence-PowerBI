@@ -1,0 +1,181 @@
+-- ============================================================
+-- Sales Analytics — DAX Measures
+-- Designed for a star schema with:
+--   • Sales     (OrderID, OrderDate, CustomerID, ProductID,
+--                SalesAmount, Quantity, UnitCost, Discount)
+--   • Products  (ProductID, ProductName, Category, SubCategory, UnitPrice)
+--   • Customers (CustomerID, CustomerName, Segment, Country, Region)
+--   • Date      (Date, Year, Quarter, Month, MonthName, WeekNum, IsWeekend)
+-- ============================================================
+
+
+-- ── Revenue ─────────────────────────────────────────────────
+
+Revenue =
+    SUM( Sales[SalesAmount] )
+
+Revenue LY =
+    CALCULATE( [Revenue], SAMEPERIODLASTYEAR( 'Date'[Date] ) )
+
+Revenue YoY % =
+    DIVIDE( [Revenue] - [Revenue LY], [Revenue LY], 0 )
+
+Revenue YTD =
+    TOTALYTD( [Revenue], 'Date'[Date] )
+
+-- NOTE: The two measures below require a Budget table with columns
+-- (Date, BudgetAmount) and a corresponding [Budget Amount] measure:
+--   Budget Amount = SUM( Budget[BudgetAmount] )
+-- Create that measure first before using Revenue Budget Variance.
+
+Budget Amount =
+    SUM( Budget[BudgetAmount] )
+
+Revenue Budget Variance =
+    [Revenue] - [Budget Amount]
+
+Revenue Budget Variance % =
+    DIVIDE( [Revenue Budget Variance], [Budget Amount], 0 )
+
+
+-- ── Volume ──────────────────────────────────────────────────
+
+Units Sold =
+    SUM( Sales[Quantity] )
+
+Number of Orders =
+    DISTINCTCOUNT( Sales[OrderID] )
+
+Average Order Value =
+    DIVIDE( [Revenue], [Number of Orders], 0 )
+
+Average Units per Order =
+    DIVIDE( [Units Sold], [Number of Orders], 0 )
+
+
+-- ── Profitability ────────────────────────────────────────────
+
+Total Cost =
+    SUMX( Sales, Sales[Quantity] * Sales[UnitCost] )
+
+Gross Profit =
+    [Revenue] - [Total Cost]
+
+Gross Profit Margin % =
+    DIVIDE( [Gross Profit], [Revenue], 0 )
+
+Discount Amount =
+    SUMX( Sales, Sales[SalesAmount] * Sales[Discount] )
+
+Net Revenue =
+    [Revenue] - [Discount Amount]
+
+
+-- ── Customer KPIs ────────────────────────────────────────────
+
+Active Customers =
+    DISTINCTCOUNT( Sales[CustomerID] )
+
+New Customers =
+    CALCULATE(
+        DISTINCTCOUNT( Sales[CustomerID] ),
+        FILTER(
+            VALUES( Sales[CustomerID] ),
+            CALCULATE( MIN( Sales[OrderDate] ) ) >= MIN( 'Date'[Date] )
+        )
+    )
+
+Returning Customers =
+    [Active Customers] - [New Customers]
+
+Avg Revenue per Customer =
+    DIVIDE( [Revenue], [Active Customers], 0 )
+
+Customer Retention Rate % =
+    VAR CustomersLastPeriod =
+        CALCULATE(
+            DISTINCTCOUNT( Sales[CustomerID] ),
+            SAMEPERIODLASTYEAR( 'Date'[Date] )
+        )
+    VAR RetainedCustomers =
+        CALCULATE(
+            DISTINCTCOUNT( Sales[CustomerID] ),
+            INTERSECT(
+                VALUES( Sales[CustomerID] ),
+                CALCULATETABLE(
+                    VALUES( Sales[CustomerID] ),
+                    SAMEPERIODLASTYEAR( 'Date'[Date] )
+                )
+            )
+        )
+    RETURN
+        DIVIDE( RetainedCustomers, CustomersLastPeriod, 0 )
+
+
+-- ── Product Performance ──────────────────────────────────────
+
+Product Revenue Rank =
+    RANKX(
+        ALLSELECTED( Products[ProductName] ),
+        [Revenue],
+        ,
+        DESC,
+        DENSE
+    )
+
+Category Revenue Share % =
+    DIVIDE(
+        [Revenue],
+        CALCULATE( [Revenue], ALLSELECTED( Products[Category] ) ),
+        0
+    )
+
+-- NOTE: This measure uses a "What-if" parameter table called 'TopN Parameter'.
+-- To create it in Power BI Desktop:
+--   1. Go to Modeling → New Parameter.
+--   2. Name it "TopN Parameter", set Data type to Whole Number, Min = 1, Max = 50, Default = 10.
+--   3. Power BI will generate the parameter table and a default slicer automatically.
+Top N Products Revenue =
+    CALCULATE(
+        [Revenue],
+        TOPN(
+            SELECTEDVALUE( 'TopN Parameter'[TopN Parameter], 10 ),
+            ALLSELECTED( Products[ProductName] ),
+            [Revenue]
+        )
+    )
+
+
+-- ── Trend / Moving Averages ──────────────────────────────────
+
+Revenue 3M Rolling Avg =
+    AVERAGEX(
+        DATESINPERIOD( 'Date'[Date], LASTDATE( 'Date'[Date] ), -3, MONTH ),
+        [Revenue]
+    )
+
+Revenue 12M Rolling Total =
+    CALCULATE(
+        [Revenue],
+        DATESINPERIOD( 'Date'[Date], LASTDATE( 'Date'[Date] ), -12, MONTH )
+    )
+
+
+-- ── Dynamic KPI Labels ───────────────────────────────────────
+
+Revenue Trend Icon =
+    SWITCH(
+        TRUE(),
+        [Revenue YoY %] >  0.05, "▲ " & FORMAT( [Revenue YoY %], "0.0%" ),
+        [Revenue YoY %] < -0.05, "▼ " & FORMAT( [Revenue YoY %], "0.0%" ),
+        "► " & FORMAT( [Revenue YoY %], "0.0%" )
+    )
+
+Performance Status =
+    SWITCH(
+        TRUE(),
+        [Revenue Budget Variance %] >=  0.10, "Exceeds Target",
+        [Revenue Budget Variance %] >=  0,    "On Target",
+        [Revenue Budget Variance %] >= -0.10, "Below Target",
+        "At Risk"
+    )
