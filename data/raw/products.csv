@@ -1,0 +1,31 @@
+ProductID,ProductName,Category,SubCategory,Brand,UnitCost,UnitPrice,StockQuantity,ReorderLevel,Supplier,LaunchDate,Discontinued
+P001,Samsung Galaxy S22,Technology,Phones,Samsung,560.00,799.99,150,30,Samsung Electronics,2022-02-25,No
+P002,Herman Miller Aeron Chair,Furniture,Chairs,Herman Miller,780.00,1299.00,40,10,Herman Miller Inc.,2021-06-01,No
+P003,A4 Printer Paper (500 sheets),Office Supplies,Paper,Generic,3.25,9.99,5000,500,Paper Plus Co.,2020-01-01,No
+P004,Dell XPS 15 Laptop,Technology,Laptops,Dell,1050.00,1599.99,80,20,Dell Technologies,2022-09-01,No
+P005,IKEA Linnmon Desk,Furniture,Tables,IKEA,110.00,249.00,120,25,IKEA,2021-03-15,No
+P006,Avery Heavy Duty Binder,Office Supplies,Binders,Avery,4.50,12.49,800,100,Avery Dennison,2020-05-10,No
+P007,Logitech MX Keys Keyboard,Technology,Accessories,Logitech,45.00,99.99,300,50,Logitech International,2021-07-20,No
+P008,IKEA Billy Bookcase,Furniture,Bookcases,IKEA,90.00,179.00,200,40,IKEA,2020-02-28,No
+P009,Avery Address Labels,Office Supplies,Labels,Avery,1.25,4.99,3000,300,Avery Dennison,2020-03-01,No
+P010,Apple iPhone 14,Technology,Phones,Apple,700.00,999.99,200,50,Apple Inc.,2022-09-16,No
+P011,Pilot G2 Gel Pens (12-pack),Office Supplies,Pens,Pilot,5.00,14.99,1200,200,Pilot Corporation,2020-01-15,No
+P012,Dell UltraSharp 27" Monitor,Technology,Monitors,Dell,330.00,549.99,100,20,Dell Technologies,2021-11-01,No
+P013,Steelcase Leap Chair,Furniture,Chairs,Steelcase,750.00,1149.00,30,8,Steelcase Inc.,2021-04-01,No
+P014,Apple AirPods Pro,Technology,Accessories,Apple,150.00,249.00,400,80,Apple Inc.,2022-10-18,No
+P015,Adjustable Standing Desk,Furniture,Tables,Generic,175.00,399.99,60,15,OfficePro Suppliers,2021-08-12,No
+P016,Swingline Staples,Office Supplies,Staples,Swingline,1.80,5.99,5000,500,ACCO Brands,2020-01-01,No
+P017,MacBook Pro 14",Technology,Laptops,Apple,1350.00,1999.00,100,25,Apple Inc.,2021-10-18,No
+P018,HP Premium Inkjet Paper,Office Supplies,Paper,HP,3.50,8.99,4000,400,HP Inc.,2020-06-01,No
+P019,La-Z-Boy Executive Chair,Furniture,Chairs,La-Z-Boy,420.00,699.99,50,12,La-Z-Boy Inc.,2021-01-20,No
+P020,USB-C Hub 7-in-1,Technology,Accessories,Generic,20.00,49.99,600,100,TechHub Co.,2021-09-01,No
+P021,Google Pixel 7,Technology,Phones,Google,380.00,599.00,120,25,Google LLC,2022-10-13,No
+P022,Sauder Bookcase,Furniture,Bookcases,Sauder,70.00,149.99,150,30,Sauder Woodworking,2020-07-15,No
+P023,HP Spectre x360,Technology,Laptops,HP,900.00,1349.99,70,15,HP Inc.,2022-08-15,No
+P024,Fiskars All-Purpose Scissors,Office Supplies,Scissors,Fiskars,3.50,8.99,1000,150,Fiskars Group,2020-04-01,No
+P025,LG UltraWide 34" Monitor,Technology,Monitors,LG,420.00,699.99,80,15,LG Electronics,2022-01-15,No
+P026,Folding Conference Table,Furniture,Tables,Generic,250.00,549.00,30,8,OfficePro Suppliers,2021-05-20,No
+P027,Hammermill Copy Paper (Case),Office Supplies,Paper,Hammermill,16.00,39.99,2000,200,Hammermill,2020-01-01,No
+P028,Blue Yeti USB Microphone,Technology,Accessories,Blue,60.00,129.99,250,50,Blue Microphones,2021-02-01,No
+P029,Autonomous ErgoChair Pro,Furniture,Chairs,Autonomous,290.00,499.00,80,20,Autonomous AI,2021-10-01,No
+P030,Samsung Galaxy S23,Technology,Phones,Samsung,600.00,849.99,180,35,Samsung Electronics,2023-02-01,No

@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Pytest cache
+.pytest_cache/
+.coverage
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Generated / processed data files (re-created by scripts)
+data/processed/
+
+# Power BI temp files
+*.pbix.lock
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
