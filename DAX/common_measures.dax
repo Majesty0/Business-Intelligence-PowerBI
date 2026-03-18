@@ -1,0 +1,108 @@
+-- ============================================================
+-- Common DAX Measures
+-- Copy any measure into the Power BI Desktop formula bar.
+-- Replace <TableName> and <ColumnName> with your own names.
+-- ============================================================
+
+
+-- ── Aggregations ────────────────────────────────────────────
+
+Total Sales =
+    SUM( Sales[SalesAmount] )
+
+Total Quantity =
+    SUM( Sales[Quantity] )
+
+Average Order Value =
+    DIVIDE( [Total Sales], DISTINCTCOUNT( Sales[OrderID] ), 0 )
+
+Total Cost =
+    SUMX( Sales, Sales[Quantity] * Sales[UnitCost] )
+
+Gross Profit =
+    [Total Sales] - [Total Cost]
+
+Gross Profit Margin % =
+    DIVIDE( [Gross Profit], [Total Sales], 0 )
+
+
+-- ── Time Intelligence ───────────────────────────────────────
+
+Sales YTD =
+    TOTALYTD( [Total Sales], 'Date'[Date] )
+
+Sales MTD =
+    TOTALMTD( [Total Sales], 'Date'[Date] )
+
+Sales QTD =
+    TOTALQTD( [Total Sales], 'Date'[Date] )
+
+Sales LY =
+    CALCULATE( [Total Sales], SAMEPERIODLASTYEAR( 'Date'[Date] ) )
+
+Sales YoY Growth =
+    [Total Sales] - [Sales LY]
+
+Sales YoY Growth % =
+    DIVIDE( [Sales YoY Growth], [Sales LY], 0 )
+
+Sales Last 30 Days =
+    CALCULATE(
+        [Total Sales],
+        DATESINPERIOD( 'Date'[Date], LASTDATE( 'Date'[Date] ), -30, DAY )
+    )
+
+Rolling 3-Month Average =
+    AVERAGEX(
+        DATESINPERIOD( 'Date'[Date], LASTDATE( 'Date'[Date] ), -3, MONTH ),
+        [Total Sales]
+    )
+
+
+-- ── Ranking ─────────────────────────────────────────────────
+
+Product Rank by Sales =
+    RANKX(
+        ALLSELECTED( Products[ProductName] ),
+        [Total Sales],
+        ,
+        DESC,
+        DENSE
+    )
+
+Top 10 Products Flag =
+    IF( [Product Rank by Sales] <= 10, "Top 10", "Others" )
+
+
+-- ── Customer Metrics ────────────────────────────────────────
+
+Unique Customers =
+    DISTINCTCOUNT( Sales[CustomerID] )
+
+New Customers =
+    CALCULATE(
+        DISTINCTCOUNT( Sales[CustomerID] ),
+        FILTER(
+            Customers,
+            Customers[FirstPurchaseDate] >= MIN( 'Date'[Date] )
+                && Customers[FirstPurchaseDate] <= MAX( 'Date'[Date] )
+        )
+    )
+
+Customer Lifetime Value =
+    DIVIDE( [Total Sales], [Unique Customers], 0 )
+
+
+-- ── Text / Conditional ──────────────────────────────────────
+
+Sales Performance Label =
+    SWITCH(
+        TRUE(),
+        [Total Sales] >= 1000000, "Excellent",
+        [Total Sales] >= 500000,  "Good",
+        [Total Sales] >= 100000,  "Average",
+        "Below Target"
+    )
+
+IsWeekend =
+    IF( WEEKDAY( 'Date'[Date], 2 ) >= 6, TRUE(), FALSE() )
